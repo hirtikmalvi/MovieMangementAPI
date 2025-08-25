@@ -3,8 +3,8 @@
 ## Tech Stack
 - .NET Core Web API
 - Entity Framework Core
-- SQL Server (or In-Memory DB)
-- Swagger/OpenAPI for API documentation
+- SQL Server
+- Swagger for API documentation
 
 ## Features Implemented
 - CRUD operations for Movie entity
@@ -22,11 +22,19 @@
 
 ## How to Run
 1. Clone the repo
-2. Update connection string in `appsettings.json`
-3. Run `dotnet ef database update` (if using EF migrations)
-4. Start the API: `dotnet run`
-5. Access Swagger: `https://localhost:7013/swagger/index.html` or `http://localhost:5268/swagger/index.html`
+   1. git clone https://github.com/hirtikmalvi/MovieMangementAPI.git
+   2. cd MovieMangementAPI
+   3. Restore Dependencies `dotnet restore`
+3. Update connection string in `appsettings.json`
+  ```json
+"ConnectionStrings": {
+  "DbConnection": "Server=YOUR_DB_SERVER;Database=EmployeeDB;Trusted_Connection=True;TrustServerCertificate=True"
+}
+```
+5. Run `dotnet ef database update`
+6. Start the API: `dotnet run`
+7. Access Swagger: `https://localhost:7013/swagger/index.html` or `http://localhost:5268/swagger/index.html`
 
 ## How to Test
-- Use Swagger UI or Postman to test endpoints
+- Use Swagger UI to test endpoints
 - Sample GET request: `/api/movies?pageNumber=1&pageSize=10`
