@@ -15,7 +15,7 @@
 - Proper error handling (CustomResult + status codes)
 
 ## Features Not Implemented Yet (Though I have started learning them)
-- Unit testing (in progress)
+- Unit testing
 - Integration tests
 - Dockerization
 - Environment-based config (.env)
