@@ -1,7 +1,3 @@
-I understand. Here is the complete content for a **`README.md`** file, based on the information you provided earlier. You can copy and paste this directly into a new file named `README.md` in your project's root directory.
-
------
-
 # 🎬 Movie Management API
 
 This is a **`.NET Core Web API`** for managing movie data, built with a focus on clean architecture and testability.
@@ -50,7 +46,6 @@ MovieManagementAPI/
 │
 ├── MovieManagementAPI.Tests/     # Unit Test Project
 │   ├── Services/                 # Unit tests for the Services layer
-│   └── (optional)
 │
 └── README.md
 ```
